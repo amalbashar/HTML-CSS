@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6d489948b.js" crossorigin="anonymous"></script>
+
+    <style>
+        .nav-bar {
+            background-color: rgb(68, 138, 255);
+            width: 100%;
+            height: 5vh;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            margin: 0;
+        }
+
+        .nav-bar ul li {
+            line-height: 4;
+            list-style: none;
+            color: white;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-bar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .profile-section img {
+            width: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .cont-bove {
+            width: 98%;
+            height: 30vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:w;
+            padding-left: 1%;
+            gap: 10px;
+        }
+
+        .left,
+        .center,
+        .right {
+            background-color:rgb(240, 236, 236);
+            width: 60%;
+            height: 80%;
+            padding: 10px;
+        }
+
+        .left,
+        .center {
+            background-color:rgb(240, 236, 236) ;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2px;
+        }
+
+        .c,.l {
+            background-color: rgb(251, 248, 245);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .icon2 {
+            font-size: 2em;
+            margin-right: 20px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+         .green {
+            background-color: rgb(50, 237, 128);
+            display: flex;
+            text-align: start;
+            height: 15vh;
+        }
+        .icon {
+            background-color: rgb(17, 193, 90);
+            width: 20%;
+            align-items: center;
+            padding-top: 4%;
+            padding-left: 7%;
+        }
+        .blue {
+            background-color: rgb(145, 186, 255);
+            display: flex;
+            text-align: start;
+            height: 15vh;
+        }
+        .icon1 {
+            background-color: rgb(68, 138, 255);
+            width: 20%;
+            align-items: center;
+            padding-top: 4%;
+            padding-left: 7%;
+        }
+        .text {
+            
+            color: white;
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+        .cont-center{width: 100%;height: 45vh;margin-bottom: 4%;
+           
+        display: flex;
+    gap: 2%;}
+  .table-left{width: 60%;height: 30vh;
+    background-color: white;
+border-collapse: collapse gray;
+margin-left: 2%;
+margin-bottom: 5%;
+padding-left: 1%;}
+.table-left td{
+    width: 40%;
+    height: 3vh;
+    border-bottom: 1px solid rgb(240, 236, 236);
+    text-align: start;
+    padding-left: 1%;
+}
+.right2{ display: grid;
+    width: 45%;margin-right: 1%;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(3,2fr);
+gap: 3%}
+
+.r1{background-color: white;
+text-align: center;
+justify-content: center;
+margin: 2%;
+height: 14vh;
+padding-top: 2%;
+margin-top: 1%;}
+.r2{background-color: rgb(255,82,82);margin: 3%;height: 10vh;justify-content: center; align-items: center;padding-left: 3%;padding-top: 3%;color: white;}
+.r3{background-color:rgb(17,193,91); margin: 3%;height: 10vh;justify-content: center; align-items: center;padding-left: 3%;padding-top: 3%;color: white;}
+
+.down{display: grid;
+background-color:white;
+width: 97%;
+height: 12vh;
+margin-top: 2%;
+grid-template-columns: repeat(4,1fr);
+padding-left: 2%;
+margin-left: 2%;
+margin-right: 2%;}
+
+input[type="range"] {
+            width: 90%;
+            margin: 10px 0;
+            background-color: transparent;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            height: 0.5rem;
+          
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 1rem;
+            height: 1rem;
+            background: #fff;
+            border-radius: 50%;
+           
+        }
+
+
+        .range1::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, yellow 0%, yellow 40%, #ddd 40%, #ddd 100%);
+            
+        }
+
+        .range2::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, rgb(16, 176, 16) 0%, rgb(16, 176, 16) 90%, #ddd 90%, #ddd 100%);
+        }
+
+        .range3::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, rgb(3, 3, 218) 0%, rgb(3, 3, 218) 60%, #ddd 60%, #ddd 100%);
+        }
+
+        .range4::-webkit-slider-runnable-track {
+            background: linear-gradient(to right, red 0%, red 20%, #ddd 20%, #ddd 100%);
+        }
+        @media (max-width: 929px) {
+            .cont-bove {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+
+            .left,
+            .center,
+            .right {
+                width: 100%;
+                height: auto;
+            }
+
+            .cont-center {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .table-left,
+            .right2 {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .down {
+                grid-template-columns: repeat(2, 1fr);
+                height: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .cont-bove,
+            .cont-center,
+            .down {
+                padding: 0;
+            }
+
+            .down {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(240, 236, 236);">
+    <header style="color: white;">
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-maximize" style="color: #fafcff;"></i></a></li>
+            </ul>
+            <ul class="profile-section">
+                <li><a href="#"><i class="fa-regular fa-bell" style="color: #ffffff;"></i></a></li>
+                <li><img src="https://i.pinimg.com/564x/5d/05/1b/5d051b767e5764b82f30c510024e5b16.jpg" alt="Profile Image"></li>
+                <li>John Doe
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 5vh; background-color: rgb(68, 138, 255); border: none;"></button>
+                </li>
+            </ul>
+        </div>
+    </header>
+<!-------------أول كونتينر ------->
+    <div class="cont-bove">
+<!---------اليسار---->
+        <div class="left">
+            <div class="l">
+                <div class="icon2"><i class="fa-solid fa-user"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">10k</h3>
+                    <h6 style="color: rgb(194, 186, 186);">Visitors</h6>
+                </div>
+            </div>
+            <div class="l">
+                <div class="icon2"></i><i class="fa-solid fa-volume-low" style="color: #49c585;"></i></div>
+                <div class="text2 " >
+                    <h3 style="font-size: 1rem;">100%</h3>
+                    <h6 style="color: rgb(194, 186, 186);">volume</h6>
+                </div>
+            </div>
+            <div class="l">
+                <div class="icon2"><i class="fa-regular fa-file-lines" style="color: #c4084a;"></i></div>&nbsp;
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">2000+</h3>
+                    <h6 style="color: rgb(194, 186, 186);">Files</h6>
+                </div>
+            </div>
+            <div class="l">
+                <div class="icon2"><i class="fa-regular fa-envelope-open" style="color: #3e91d0;"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">120</h3>
+                <h6 style="color: rgb(194, 186, 186);">mails</h6>
+                </div>
+            </div>
+        </div>
+<!-------النص------->
+        <div class="center">
+            <div class="c">
+                <div class="icon2"><i class="fa-solid fa-share-nodes" style="color: #0970be;"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">1000</h3>
+                    <h6 style="color: rgb(194, 186, 186);">share</h6>
+                </div>
+            </div>
+            <div class="c">
+                <div class="icon2"><i class="fa-solid fa-network-wired" style="color: #17b021;"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">600</h3>
+                    <h6 style="color: rgb(194, 186, 186);">Network</h6>
+                </div>
+            </div>
+            <div class="c">
+                <div class="icon2"><i class="fa-solid fa-signal" style="color: #df434b;"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">350</h3>
+                    <h6 style="color: rgb(194, 186, 186);">Returns</h6>
+                </div>
+            </div>
+            <div class="c">
+                <div class="icon2"><i class="fa-solid fa-wifi" style="color: #2589d4;"></i></div>
+                <div class="text2">
+                    <h3 style="font-size: 1rem;">100%</h3>
+                    <h6 style="color: rgb(194, 186, 186);">connection</h6>
+                </div>
+            </div>
+        </div>
+        <!------اليمين ---->
+        <div class="right">
+            <div class="green">
+                <div class="icon"><i class="fa-solid fa-star" style="color: #f4f7fa;"></i></div>
+                <div class="text">
+                    <h3 style="font-size: 1rem;">4000+</h3>
+                    <h6>Ratings Received</h6>
+                </div>
+            </div>
+            <div class="blue">
+                <div class="icon1"><i class="fa-solid fa-trophy" style="color: #f2f4f7;"></i></div>
+                <div class="text">
+                    <h3 style="font-size: 1rem;">17</h3>
+                    <h6>Achievements</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!______________________________________________________________________الوسط_________________>
+    <div class="cont-center">
+<table class="table-left">
+    <tr>
+        <td> &nbsp&nbsp;Member's performance</td>
+        <td style="padding-left: 43%;"><i class="fa-solid fa-wrench" style="color: #8c9097;"></i></td>
+    </tr>
+    <tr>
+        <td ><img src="https://i.pinimg.com/564x/41/6e/f9/416ef9d940560bb08d653276886ff3fd.jpg" style="width: 7%;border-radius: 70%;">&nbsp;&nbsp; shirley hoe<p style="padding-left: 9%;font-size: 1rem;color: rgb(160, 147, 147);">sales executive ,NY</p> </td>
+        <td style="padding-left: 35%;">$78.001 <i class="fa-solid fa-turn-down" style="color: #eb1e1e;"></i></td>
+    </tr>
+    <tr>
+        <td><img src="https://i.pinimg.com/564x/51/d3/1c/51d31cd9ab4b672ae6d1ae7897fef8e5.jpg" style="width: 7%;border-radius: 70%;">&nbsp;&nbsp; james Alexander<p style="padding-left: 9%;font-size: 1rem;color: rgb(160, 147, 147);">sales executive ,EL</p> </td>
+        <td style="padding-left: 35%;">$89.051 <i class="fa-solid fa-turn-up" style="color: #09aa26;"></i></td>
+    </tr>
+    <tr>
+        <td><img src="https://i.pinimg.com/564x/41/6e/f9/416ef9d940560bb08d653276886ff3fd.jpg" style="width: 7%;border-radius: 70%;">&nbsp;&nbsp; shirley hoe<p style="padding-left: 9%;font-size: 1rem;color: rgb(160, 147, 147);">sales executive ,NY</p> </td>
+        <td style="padding-left: 35%;">$89.051 <i class="fa-solid fa-turn-up" style="color: #09aa26;"></i></td>
+    </tr>
+    <tr>
+        <td><img src="https://i.pinimg.com/564x/51/d3/1c/51d31cd9ab4b672ae6d1ae7897fef8e5.jpg" style="width: 7%;border-radius: 70%;"> &nbsp;&nbsp;Nicky xander<p style="padding-left: 9%; font-size: 1rem;color: rgb(160, 147, 147);">sales executive ,EL</p> </td>
+        <td style="padding-left: 35%;">$89.051 <i class="fa-solid fa-turn-up" style="color: #09aa26;"></i></td>
+    </tr>
+</table>   
+<div class="right2">
+<div class="r1">
+    <p>Total subscription</p>
+    <h6><i class="fa-solid fa-arrow-down" style="color: #e90c0c;"></i>   7652</h6>
+    <p>48% From Last 24 Hours</p>
+</div>
+<div class="r1">
+    <p>Order status</p>
+    <h6> <i class="fa-solid fa-arrow-up" style="color: #1ca645;"></i>6325</h6>
+    <p>36% From Last 6 months</p>
+    </div>
+<div class="r2">
+    <h6>489</h6>
+    <p>Total Comment</p>
+</div>
+<div class="r3">
+    <h6>$5782</h6>
+    <p>Income status</p>
+</div>
+<div class="r1">
+    <p>Unique Visitors</p>
+    <h6><i class="fa-solid fa-arrow-down" style="color: #e90c0c;"></i>  652</h6>
+    <p>36% From Last 6 Months</p>
+</div>
+<div class="r1">
+    <p>Monthly Earnings</p>
+    <h6><i class="fa-solid fa-arrow-up" style="color: #1ca645;"></i>    5963</h6>
+    <p>36% From Last 6 Months</p>
+</div>
+
+</div>
+        </div>
+        <!------------------------------اخر كونتينر-------------------------------------->
+<div class="down ">
+    <div>
+        <p>Published Project</p>
+        <h5>532 <span style="color: #17d73a;">+1.69%</span></h5>
+        <input class="range4" type="range" max="100">
+    </div>
+    <div>
+        <p>Completed Task</p>
+        <h5>4,569 <span style="color: #eb2e2e;">-0.5%</span></h5>
+        <input class="range3" type="range" max="100">
+    </div>
+    <div>
+        <p>Successful Task</p>
+        <h5>89% <span style="color: #17d73a;">+0.99%</span></h5>
+        <input class="range2" type="range" max="100">
+    </div>
+    <div>
+        <p>Ongoing Project</p>
+        <h5>365 <span style="color: #17d73a;">+0.35%</span></h5>
+        <input class="range1" type="range" max="100" >
+    </div>
+</div>
+</body>
+
+</html>
