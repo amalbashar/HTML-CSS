@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .cont {
+        background-color: #FAFAFA;
+        width: 95%;
+        height: 95vh;
+        margin-left: 2.5%;
+        ;
+    }
+
+    .h1 {
+        padding: 1%;
+        text-align: center;
+    }
+</style>
+
+<body style="background-color:#A5D7CF ; ">
+    <h1 class="h1"> Survey Form</h1>
+    <br>
+    <div class="cont">
+        <p class="h1"> let us know how we can improve freeCodeCamp</p>
+        <form style=" align-self: center; margin-left: 40%;">
+
+            <br>
+            <label for="fname"> Name: </label>
+            <input type="text" id="fname" placeholder="enter you name" required>
+            <br> <br>
+            <label for="email"> Email:</label>
+            <input type="email" id="email" placeholder="enter your email" required>
+            <br> <br>
+            <label for="age"> Age:</label>
+            <input type="number" id="age" placeholder="age" required>
+            <br> <br>
+            <label> which option describes your ccrrent role?</label>
+            <select name="student">
+                <option> student</option>
+                <option> teacher</option>
+            </select>
+            <br> <br>
+            <label> how likely is that you would recommend <br>
+                freeCodeCamp to afreind?
+            </label>
+            <br>
+            <label>definitly </label>
+            <input type="radio" value="definitly" name="bb"><br>
+            <label> Maybe</label>
+            <input type="radio" value="Maybe" name="bb"> <br>
+            <label> notsure</label>
+            <input type="radio" value="notsure" name="bb"> <br>
+            <br>
+            <label> what do you like most in FCC?</label>
+            <select name="select an option">
+                <option> select an option </option>
+                </option>
+                <option> option </option>
+                <option> option </option>
+                <option> option </option>
+                <br> <br> <br>
+            </select>
+            <br> <br>
+            <label> things that will be improved in the futur: <br> (check all that apply) </label> <br>
+                <label>front end project  </label> 
+                <input type="radio" value="definitly" name="bb"><br>
+                <label> back-end project</label>
+                <input type="radio" value="Maybe" name="bbb"> <br>
+                <label> data visu </label>
+                <input type="radio" value="notsure" name="b">
+                <br> 
+                <div> <br> 
+                <input type="submit">  </div>
+
+
+
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>
