@@ -1,0 +1,17 @@
+body{ background-color: lightgoldenrodyellow;
+}    
+
+.p1{
+    border: 3px solid black;
+}
+
+.p2{
+    border: 3px dashed red ;
+color: brown;}
+.c1{ 
+    background-color: chocolate;
+}
+
+.c2{
+    background-color: darkkhaki;
+}
