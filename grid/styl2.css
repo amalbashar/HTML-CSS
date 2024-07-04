@@ -1,0 +1,19 @@
+.cont{
+    display:grid;
+    grid-template-columns : repeat(60, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    padding: 10px;
+    height: 100vh;
+    gap: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+}
+.cont>div{
+    background-color:#46B2FD ;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
