@@ -1,0 +1,230 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+body {
+    background-color: #B9B9B9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c1c1c1' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23c8c8c8' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23d0d0d0' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23d7d7d7' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23dfdfdf' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%23e6e6e6' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23EEE' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;}
+
+.bigbasket{
+    display: flex;
+    background-color: rgb(27,32,61);
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    align-content: center;
+    justify-items:center ;
+    align-items: center;
+    margin: 2rem;
+}
+
+.navbar{
+    flex: 20%;
+    background-color: rgb(39,44,74);
+    height: 100%;
+
+}
+
+.dashbord{
+    flex: 80%;
+    height: 100%;
+padding: 30px;
+flex-direction: column;
+}
+
+.logo{
+font-size: 2rem;
+color: white;
+padding: 1rem;
+
+}
+mark{
+    background-color: rgb(39,44,74);
+    color: rgb(255, 0, 0);
+}
+
+ul {
+    list-style-type:none;
+    color:rgb(116,117,119);
+    padding-left: 1.5rem;
+padding-top: 0.6rem;    
+padding-bottom: 0.6rem;    
+margin: 0;
+
+}
+
+.section1{
+
+    display: flex;
+    width: 100%;
+    height: 10vh;
+font-size: 1.5rem;
+color: white;
+margin-top: 25px;
+justify-content: space-between;
+margin-bottom: 2.1rem;
+
+}
+.tab{
+flex: 1;
+}
+.profile{
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+}
+
+.cardimg{
+    flex: 1;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1rem;
+
+
+}
+
+.section2{
+    flex: 1;
+    display: flex;
+    margin-bottom: 2.1rem;
+    height: 7rem;
+}
+
+.tabcard{
+    background-color: rgb(39,44,74);
+    width: 25%;
+    margin:0.7rem;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+.cardson1{
+    width: 100%;
+color:white;
+flex: 1;
+line-height: 0.2rem;
+
+}
+
+.cardson2{
+    width: 100%;
+color:white;
+flex: 1;
+line-height: 0.2rem;
+text-align: right;
+}
+
+.section3{
+    display: flex;
+    width: 100%;
+
+}
+
+.analatic1{
+    background-color: rgb(39,44,74);
+    flex: 70%;
+    margin:0.7rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    color: white;
+
+}
+
+.analatic2{
+    background-color: rgb(39,44,74);
+    flex: 30%;
+    height: 12rem;
+    margin:0.7rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+}
+
+.titlered{
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    margin-bottom: 0.5rem;
+
+
+}
+
+.buttom{
+    color: red;
+}
+
+.content1{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items:center ;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.tablewinkwink-title{
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.tablewinkwink{
+    display: flex;
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    color: rgb(196, 196, 196);
+}
+
+.company{
+flex: 2;
+text-align: left;
+
+}
+
+.theother2{
+    flex: 1;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid rgb(46,50,81);
+    margin: 0;
+
+}
+
+
+.circular-progress {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }
+  .inner-circle {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: lightgrey;
+  }
+  
+  .percentage {
+    position: relative;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0, 0.8);
+  }
